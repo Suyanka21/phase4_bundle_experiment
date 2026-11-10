@@ -1,0 +1,21 @@
+{
+  "notice": "POST-IMPLEMENTATION CHALLENGE GROUND TRUTH \u2014 open only after checker runs complete",
+  "cases": [
+    {
+      "case_id": "U01",
+      "file": "U01_unseen_duplicate_other_document.pdf",
+      "injected_defects": [
+        "EXACT_DUPLICATE_PAGE"
+      ],
+      "location": "DOC-07 local page 2 duplicated"
+    },
+    {
+      "case_id": "U02",
+      "file": "U02_unseen_index_shift_other_document.pdf",
+      "injected_defects": [
+        "INDEX_START_PAGE_MISMATCH"
+      ],
+      "location": "DOC-08 index start page increased by 1"
+    }
+  ]
+}

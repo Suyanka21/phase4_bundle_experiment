@@ -1,0 +1,15 @@
+case_id,pdf,purpose,checker_inputs
+T01,pdfs/T01_clean_baseline.pdf,clean control,metadata/expected_inventory.json; metadata/version_register.json
+T02,pdfs/T02_missing_annexure.pdf,known defective variant; defect labels withheld from checker,metadata/expected_inventory.json; metadata/version_register.json
+T03,pdfs/T03_missing_internal_page.pdf,known defective variant; defect labels withheld from checker,metadata/expected_inventory.json; metadata/version_register.json
+T04,pdfs/T04_exact_duplicate_page.pdf,known defective variant; defect labels withheld from checker,metadata/expected_inventory.json; metadata/version_register.json
+T05,pdfs/T05_near_duplicate_page.pdf,known defective variant; defect labels withheld from checker,metadata/expected_inventory.json; metadata/version_register.json
+T06,pdfs/T06_broken_continuous_pagination.pdf,known defective variant; defect labels withheld from checker,metadata/expected_inventory.json; metadata/version_register.json
+T07,pdfs/T07_index_reference_mismatch.pdf,known defective variant; defect labels withheld from checker,metadata/expected_inventory.json; metadata/version_register.json
+T08,pdfs/T08_wrong_document_version.pdf,known defective variant; defect labels withheld from checker,metadata/expected_inventory.json; metadata/version_register.json
+T09,pdfs/T09_exhibit_label_mismatch.pdf,known defective variant; defect labels withheld from checker,metadata/expected_inventory.json; metadata/version_register.json
+T10,pdfs/T10_low_quality_raster_page.pdf,known defective variant; defect labels withheld from checker,metadata/expected_inventory.json; metadata/version_register.json
+T11,pdfs/T11_two_independent_defects.pdf,known defective variant; defect labels withheld from checker,metadata/expected_inventory.json; metadata/version_register.json
+T12,pdfs/T12_clean_unusual_landscape.pdf,clean control,metadata/expected_inventory.json; metadata/version_register.json
+C01,pdfs/C01_clean_text_variation.pdf,clean control,metadata/expected_inventory.json; metadata/version_register.json
+C02,pdfs/C02_clean_reordered_documents.pdf,clean control,metadata/expected_inventory.json; metadata/version_register.json

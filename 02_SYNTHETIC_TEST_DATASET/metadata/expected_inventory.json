@@ -1,0 +1,62 @@
+{
+  "scenario": "FICTIONAL TEST SCENARIO \u2014 NOT A REAL CASE OR COURT FILING",
+  "case_reference": "SIM-CIV-2026-0042",
+  "documents": [
+    {
+      "document_id": "DOC-01",
+      "title": "Simulated Statement of Claim",
+      "expected_pages": 5,
+      "version": "V2",
+      "exhibit_label": ""
+    },
+    {
+      "document_id": "DOC-02",
+      "title": "Simulated Supporting Affidavit",
+      "expected_pages": 5,
+      "version": "V3",
+      "exhibit_label": ""
+    },
+    {
+      "document_id": "DOC-03",
+      "title": "Simulated Annexure A \u2014 Schedule of Items",
+      "expected_pages": 8,
+      "version": "V1",
+      "exhibit_label": "A"
+    },
+    {
+      "document_id": "DOC-04",
+      "title": "Simulated Annexure B \u2014 Correspondence",
+      "expected_pages": 6,
+      "version": "V2",
+      "exhibit_label": "B"
+    },
+    {
+      "document_id": "DOC-05",
+      "title": "Simulated Service Correspondence",
+      "expected_pages": 4,
+      "version": "V1",
+      "exhibit_label": ""
+    },
+    {
+      "document_id": "DOC-06",
+      "title": "Simulated Statement of Response",
+      "expected_pages": 5,
+      "version": "V2",
+      "exhibit_label": ""
+    },
+    {
+      "document_id": "DOC-07",
+      "title": "Simulated Replying Affidavit",
+      "expected_pages": 4,
+      "version": "V1",
+      "exhibit_label": ""
+    },
+    {
+      "document_id": "DOC-08",
+      "title": "Simulated Annexure C \u2014 Summary Table",
+      "expected_pages": 7,
+      "version": "V1",
+      "exhibit_label": "C"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "pdf": "T09_exhibit_label_mismatch.pdf",
+  "sha256": "0a59a968e6b0e246b8a92639a061d2b7bd56076d282e7704bddd7970815f7013",
+  "pages": 46,
+  "opaque_pages": [],
+  "findings": [
+    {
+      "type": "EXHIBIT_LABEL_MISMATCH",
+      "severity": "error",
+      "location": "DOC-03",
+      "evidence": "Inventory expects exhibit label A; text-layer page labels contain: Z.",
+      "human_action": "Compare the exhibit divider and source inventory; do not infer legal identity from the label alone."
+    }
+  ],
+  "processing_seconds": 5.763019,
+  "checker_version": "0.1.0",
+  "suite": "primary",
+  "case_id": "T09",
+  "wall_seconds": 6.087364,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T09_exhibit_label_mismatch.pdf",
+    "--inventory",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+    "--versions",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+    "--json-out",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T09.json"
+  ]
+}

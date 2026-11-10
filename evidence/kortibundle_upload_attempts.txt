@@ -1,0 +1,21 @@
+KORTIBUNDLE SYNTHETIC UPLOAD ATTEMPTS — TOOL-RESPONSE TRANSCRIPT
+Observed 10 November 2026, UTC+03:00. Target: https://kortibundle.com/
+Input intended: /home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T01_clean_baseline.pdf
+
+16:18:59 — browser_upload_file, element index 10
+"Attempted to upload all 1 files (all attempts failed)"
+"10 \"T01_clean_baseline.pdf\": fail - Node is not a file input element (-32000)"
+
+16:19:13 — browser_upload_file, element index 0
+"Attempted to upload all 1 files (all attempts failed)"
+"0 \"T01_clean_baseline.pdf\": fail - could not locate file input element"
+
+16:19:20 — browser_click, visible upload-area label element index 52
+"Attempted to click element at index 52"
+The following rendered page state still showed the upload area and "No documents added to the court bundle yet". No file was accepted.
+
+16:19:36 — browser_upload_file, element index 87
+"Attempted to upload all 1 files (all attempts failed)"
+"87 \"T01_clean_baseline.pdf\": fail - could not locate file input element"
+
+This is a transcription of browser automation tool responses, not a KortiBundle server log. It proves only that the browser tool did not submit the file; it is not evidence of product-side processing or rejection. No file contents were transferred to the product.

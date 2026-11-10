@@ -1,0 +1,23 @@
+{
+  "pdf": "C02_clean_reordered_documents.pdf",
+  "sha256": "c4954ece35eb4e89dc1a53345716fe6e63f6e0f1bf3fab0e67b086d68ce9a02a",
+  "pages": 46,
+  "opaque_pages": [],
+  "findings": [],
+  "processing_seconds": 5.80322,
+  "checker_version": "0.1.0",
+  "suite": "primary",
+  "case_id": "C02",
+  "wall_seconds": 6.149169,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/C02_clean_reordered_documents.pdf",
+    "--inventory",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+    "--versions",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+    "--json-out",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/C02.json"
+  ]
+}

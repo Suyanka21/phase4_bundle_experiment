@@ -1,0 +1,33 @@
+{
+  "pdf": "T10_low_quality_raster_page.pdf",
+  "sha256": "806f35445af0e22373a38b07817b75c779c8e7818668519ee962502731c32c76",
+  "pages": 46,
+  "opaque_pages": [
+    23
+  ],
+  "findings": [
+    {
+      "type": "NO_EXTRACTABLE_TEXT_LAYER",
+      "severity": "warning",
+      "location": "PDF page 23",
+      "evidence": "The page yielded fewer than 20 non-whitespace characters from the embedded text layer; visual readability was not assessed.",
+      "human_action": "Open the page visually and confirm legibility; OCR or another accessible source may be needed."
+    }
+  ],
+  "processing_seconds": 5.507132,
+  "checker_version": "0.1.0",
+  "suite": "primary",
+  "case_id": "T10",
+  "wall_seconds": 5.842567,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T10_low_quality_raster_page.pdf",
+    "--inventory",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+    "--versions",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+    "--json-out",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T10.json"
+  ]
+}

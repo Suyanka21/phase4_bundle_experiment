@@ -1,0 +1,31 @@
+{
+  "pdf": "T04_exact_duplicate_page.pdf",
+  "sha256": "e8be2ce084b3303855892ffc0e379e4406296ee1046f827757d5d1ab33b15a6a",
+  "pages": 47,
+  "opaque_pages": [],
+  "findings": [
+    {
+      "type": "EXACT_DUPLICATE_PAGE",
+      "severity": "warning",
+      "location": "PDF pages 15 and 16",
+      "evidence": "Normalized extracted page text is identical after removing the printed global page label.",
+      "human_action": "Compare both pages with the source and determine whether the repeat is intentional."
+    }
+  ],
+  "processing_seconds": 6.24,
+  "checker_version": "0.1.0",
+  "suite": "primary",
+  "case_id": "T04",
+  "wall_seconds": 6.689508,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T04_exact_duplicate_page.pdf",
+    "--inventory",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+    "--versions",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+    "--json-out",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T04.json"
+  ]
+}

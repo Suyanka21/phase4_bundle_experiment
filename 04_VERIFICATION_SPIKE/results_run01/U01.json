@@ -1,0 +1,31 @@
+{
+  "pdf": "U01_unseen_duplicate_other_document.pdf",
+  "sha256": "dc5521536fe3aa931fe6e5a5edd9f13cacf03d8a2e182f34c1aae8cb3251f2f2",
+  "pages": 47,
+  "opaque_pages": [],
+  "findings": [
+    {
+      "type": "EXACT_DUPLICATE_PAGE",
+      "severity": "warning",
+      "location": "PDF pages 37 and 38",
+      "evidence": "Normalized extracted page text is identical after removing the printed global page label.",
+      "human_action": "Compare both pages with the source and determine whether the repeat is intentional."
+    }
+  ],
+  "processing_seconds": 6.05969,
+  "checker_version": "0.1.0",
+  "suite": "unseen",
+  "case_id": "U01",
+  "wall_seconds": 6.385325,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/U01_unseen_duplicate_other_document.pdf",
+    "--inventory",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+    "--versions",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+    "--json-out",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/U01.json"
+  ]
+}

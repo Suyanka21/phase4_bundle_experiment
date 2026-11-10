@@ -1,0 +1,31 @@
+{
+  "pdf": "T08_wrong_document_version.pdf",
+  "sha256": "5e1672760321c40e162946e88022a11f765968bc62dca17537b225606502dadd",
+  "pages": 46,
+  "opaque_pages": [],
+  "findings": [
+    {
+      "type": "VERSION_MISMATCH",
+      "severity": "error",
+      "location": "DOC-02",
+      "evidence": "Version register expects V3; text-layer page labels contain: V1.",
+      "human_action": "Confirm the operative source version with the responsible legal professional."
+    }
+  ],
+  "processing_seconds": 5.873621,
+  "checker_version": "0.1.0",
+  "suite": "primary",
+  "case_id": "T08",
+  "wall_seconds": 6.218927,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T08_wrong_document_version.pdf",
+    "--inventory",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+    "--versions",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+    "--json-out",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T08.json"
+  ]
+}

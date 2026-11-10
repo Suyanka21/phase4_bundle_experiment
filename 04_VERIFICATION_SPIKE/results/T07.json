@@ -1,0 +1,31 @@
+{
+  "pdf": "T07_index_reference_mismatch.pdf",
+  "sha256": "ab2c9cdc10116748cd8512c5c0c44da460b3633e26211725ebd17baead955ce5",
+  "pages": 46,
+  "opaque_pages": [],
+  "findings": [
+    {
+      "type": "INDEX_START_PAGE_MISMATCH",
+      "severity": "error",
+      "location": "DOC-04",
+      "evidence": "Index states start page 23; first text-layer occurrence is PDF page 21.",
+      "human_action": "Check index references against the assembled document order."
+    }
+  ],
+  "processing_seconds": 5.696339,
+  "checker_version": "0.1.0",
+  "suite": "primary",
+  "case_id": "T07",
+  "wall_seconds": 6.01814,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T07_index_reference_mismatch.pdf",
+    "--inventory",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+    "--versions",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+    "--json-out",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T07.json"
+  ]
+}

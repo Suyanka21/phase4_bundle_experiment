@@ -1,0 +1,3 @@
+case_id,pdf,checker_inputs
+U01,pdfs/U01_unseen_duplicate_other_document.pdf,metadata/expected_inventory.json; metadata/version_register.json
+U02,pdfs/U02_unseen_index_shift_other_document.pdf,metadata/expected_inventory.json; metadata/version_register.json

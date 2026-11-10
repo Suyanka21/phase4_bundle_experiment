@@ -1,0 +1,31 @@
+{
+  "pdf": "T05_near_duplicate_page.pdf",
+  "sha256": "9be0c3ee1703d3ffebd298d89a184d967b8b8af0cd327c9789c0f97647936416",
+  "pages": 47,
+  "opaque_pages": [],
+  "findings": [
+    {
+      "type": "NEAR_DUPLICATE_PAGE",
+      "severity": "review",
+      "location": "PDF pages 15 and 16",
+      "evidence": "Normalized extracted text similarity is at least 0.99; this is a heuristic, not semantic duplicate detection.",
+      "human_action": "Visually compare the pages and source versions; similar text is not proof of duplication."
+    }
+  ],
+  "processing_seconds": 5.957821,
+  "checker_version": "0.1.0",
+  "suite": "primary",
+  "case_id": "T05",
+  "wall_seconds": 6.300143,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T05_near_duplicate_page.pdf",
+    "--inventory",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+    "--versions",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+    "--json-out",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T05.json"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "notice": "GROUND TRUTH \u2014 DO NOT PASS TO CHECKER DURING DETECTION",
+  "cases": [
+    {
+      "case_id": "T01",
+      "file": "T01_clean_baseline.pdf",
+      "injected_defects": [],
+      "locations": [],
+      "expected_result": "no flag"
+    },
+    {
+      "case_id": "T02",
+      "file": "T02_missing_annexure.pdf",
+      "injected_defects": [
+        "MISSING_EXPECTED_DOCUMENT"
+      ],
+      "locations": [
+        "DOC-03 absent; listed in expected inventory"
+      ],
+      "expected_result": "flag"
+    },
+    {
+      "case_id": "T03",
+      "file": "T03_missing_internal_page.pdf",
+      "injected_defects": [
+        "DOCUMENT_PAGE_SEQUENCE_GAP"
+      ],
+      "locations": [
+        "DOC-03 local page 4/8 absent"
+      ],
+      "expected_result": "flag"
+    },
+    {
+      "case_id": "T04",
+      "file": "T04_exact_duplicate_page.pdf",
+      "injected_defects": [
+        "EXACT_DUPLICATE_PAGE"
+      ],
+      "locations": [
+        "DOC-03 local page 3/8 duplicated or near-duplicated"
+      ],
+      "expected_result": "flag"
+    },
+    {
+      "case_id": "T05",
+      "file": "T05_near_duplicate_page.pdf",
+      "injected_defects": [
+        "NEAR_DUPLICATE_PAGE"
+      ],
+      "locations": [
+        "DOC-03 local page 3/8 duplicated or near-duplicated"
+      ],
+      "expected_result": "flag"
+    },
+    {
+      "case_id": "T06",
+      "file": "T06_broken_continuous_pagination.pdf",
+      "injected_defects": [
+        "BUNDLE_PAGINATION_MISMATCH"
+      ],
+      "locations": [
+        "physical bundle page 15 carries printed BUNDLE_PAGE 16"
+      ],
+      "expected_result": "flag"
+    },
+    {
+      "case_id": "T07",
+      "file": "T07_index_reference_mismatch.pdf",
+      "injected_defects": [
+        "INDEX_START_PAGE_MISMATCH"
+      ],
+      "locations": [
+        "DOC-04 index start page deliberately increased by 2"
+      ],
+      "expected_result": "flag"
+    },
+    {
+      "case_id": "T08",
+      "file": "T08_wrong_document_version.pdf",
+      "injected_defects": [
+        "VERSION_MISMATCH"
+      ],
+      "locations": [
+        "DOC-02 included version V1; expected register says V3"
+      ],
+      "expected_result": "flag"
+    },
+    {
+      "case_id": "T09",
+      "file": "T09_exhibit_label_mismatch.pdf",
+      "injected_defects": [
+        "EXHIBIT_LABEL_MISMATCH"
+      ],
+      "locations": [
+        "DOC-03 label Z; inventory says exhibit A"
+      ],
+      "expected_result": "flag"
+    },
+    {
+      "case_id": "T10",
+      "file": "T10_low_quality_raster_page.pdf",
+      "injected_defects": [
+        "NO_EXTRACTABLE_TEXT_LAYER"
+      ],
+      "locations": [
+        "DOC-04 local page 3/6 is a low-resolution raster without text layer"
+      ],
+      "expected_result": "flag"
+    },
+    {
+      "case_id": "T11",
+      "file": "T11_two_independent_defects.pdf",
+      "injected_defects": [
+        "MISSING_EXPECTED_DOCUMENT",
+        "BUNDLE_PAGINATION_MISMATCH"
+      ],
+      "locations": [
+        "DOC-03 absent from page text; physical page 12 has incorrect bundle label"
+      ],
+      "expected_result": "flag"
+    },
+    {
+      "case_id": "T12",
+      "file": "T12_clean_unusual_landscape.pdf",
+      "injected_defects": [],
+      "locations": [],
+      "expected_result": "no flag"
+    },
+    {
+      "case_id": "C01",
+      "file": "C01_clean_text_variation.pdf",
+      "injected_defects": [],
+      "locations": [],
+      "expected_result": "no flag"
+    },
+    {
+      "case_id": "C02",
+      "file": "C02_clean_reordered_documents.pdf",
+      "injected_defects": [],
+      "locations": [],
+      "expected_result": "no flag"
+    }
+  ]
+}

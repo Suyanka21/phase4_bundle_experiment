@@ -1,0 +1,31 @@
+{
+  "pdf": "T03_missing_internal_page.pdf",
+  "sha256": "45b1afa5c63581761d94102d1cfd37f4516077c82c5db606606da6b3de8535ce",
+  "pages": 45,
+  "opaque_pages": [],
+  "findings": [
+    {
+      "type": "DOCUMENT_PAGE_SEQUENCE_GAP",
+      "severity": "error",
+      "location": "DOC-03",
+      "evidence": "Printed document-local page sequence omits page number(s): 4.",
+      "human_action": "Compare the assembled PDF with the authoritative source document."
+    }
+  ],
+  "processing_seconds": 5.587082,
+  "checker_version": "0.1.0",
+  "suite": "primary",
+  "case_id": "T03",
+  "wall_seconds": 5.949955,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T03_missing_internal_page.pdf",
+    "--inventory",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+    "--versions",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+    "--json-out",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T03.json"
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "run_started_utc": "2026-11-10T13:34:58.557246+00:00",
+  "run_finished_utc": "2026-11-10T13:36:34.127373+00:00",
+  "python": "3.12.3",
+  "platform": "Linux-6.18.38+-x86_64-with-glibc2.39",
+  "pypdf": "6.21.3",
+  "checker_sha256": "ef702cc273bdcdc3166da3590c34b6a585f38d1a640cb51a6b00a8eab208e5ea",
+  "inventory_sha256": "f80633ce9c0d178c02d7f8803e980f0d73f970a7b2dea56a44fcb9e50c916160",
+  "version_register_sha256": "a94dd8424c341835a42d9769c0491aa3608c6feefc7f641f77203149c26c6a04",
+  "ground_truth_read": false,
+  "results": [
+    {
+      "pdf": "T01_clean_baseline.pdf",
+      "sha256": "038acbee00d0c2b0e0a983466029439523cad74b50ca2c934d80ec27c5494fd2",
+      "pages": 46,
+      "opaque_pages": [],
+      "findings": [],
+      "processing_seconds": 5.687681,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "T01",
+      "wall_seconds": 6.06009,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T01_clean_baseline.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T01.json"
+      ]
+    },
+    {
+      "pdf": "T02_missing_annexure.pdf",
+      "sha256": "e450e9381f43f81f09a77bad28dd20f007d958362ee7f4f595c30c2498907b35",
+      "pages": 38,
+      "opaque_pages": [],
+      "findings": [
+        {
+          "type": "MISSING_EXPECTED_DOCUMENT",
+          "severity": "error",
+          "location": "DOC-03",
+          "evidence": "Document is listed in the supplied expected inventory but no page carries this document identifier.",
+          "human_action": "Check the source file set and confirm whether the expected document belongs in this bundle."
+        }
+      ],
+      "processing_seconds": 3.863374,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "T02",
+      "wall_seconds": 4.18423,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T02_missing_annexure.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T02.json"
+      ]
+    },
+    {
+      "pdf": "T03_missing_internal_page.pdf",
+      "sha256": "45b1afa5c63581761d94102d1cfd37f4516077c82c5db606606da6b3de8535ce",
+      "pages": 45,
+      "opaque_pages": [],
+      "findings": [
+        {
+          "type": "DOCUMENT_PAGE_SEQUENCE_GAP",
+          "severity": "error",
+          "location": "DOC-03",
+          "evidence": "Printed document-local page sequence omits page number(s): 4.",
+          "human_action": "Compare the assembled PDF with the authoritative source document."
+        }
+      ],
+      "processing_seconds": 5.587082,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "T03",
+      "wall_seconds": 5.949955,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T03_missing_internal_page.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T03.json"
+      ]
+    },
+    {
+      "pdf": "T04_exact_duplicate_page.pdf",
+      "sha256": "e8be2ce084b3303855892ffc0e379e4406296ee1046f827757d5d1ab33b15a6a",
+      "pages": 47,
+      "opaque_pages": [],
+      "findings": [
+        {
+          "type": "EXACT_DUPLICATE_PAGE",
+          "severity": "warning",
+          "location": "PDF pages 15 and 16",
+          "evidence": "Normalized extracted page text is identical after removing the printed global page label.",
+          "human_action": "Compare both pages with the source and determine whether the repeat is intentional."
+        }
+      ],
+      "processing_seconds": 6.231098,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "T04",
+      "wall_seconds": 6.627443,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T04_exact_duplicate_page.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T04.json"
+      ]
+    },
+    {
+      "pdf": "T05_near_duplicate_page.pdf",
+      "sha256": "9be0c3ee1703d3ffebd298d89a184d967b8b8af0cd327c9789c0f97647936416",
+      "pages": 47,
+      "opaque_pages": [],
+      "findings": [
+        {
+          "type": "NEAR_DUPLICATE_PAGE",
+          "severity": "review",
+          "location": "PDF pages 15 and 16",
+          "evidence": "Normalized extracted text similarity is at least 0.99; this is a heuristic, not semantic duplicate detection.",
+          "human_action": "Visually compare the pages and source versions; similar text is not proof of duplication."
+        }
+      ],
+      "processing_seconds": 6.201484,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "T05",
+      "wall_seconds": 6.59876,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T05_near_duplicate_page.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T05.json"
+      ]
+    },
+    {
+      "pdf": "T06_broken_continuous_pagination.pdf",
+      "sha256": "f47599bcc8e364860e259b265fb013fc7207fc7d05b3bafc758637ff0de3b64f",
+      "pages": 46,
+      "opaque_pages": [],
+      "findings": [
+        {
+          "type": "BUNDLE_PAGINATION_MISMATCH",
+          "severity": "error",
+          "location": "PDF page 15",
+          "evidence": "Printed BUNDLE_PAGE is 16; PDF physical position is 15.",
+          "human_action": "Check continuous page numbering and its starting point."
+        }
+      ],
+      "processing_seconds": 5.79279,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "T06",
+      "wall_seconds": 6.129143,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T06_broken_continuous_pagination.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T06.json"
+      ]
+    },
+    {
+      "pdf": "T07_index_reference_mismatch.pdf",
+      "sha256": "ab2c9cdc10116748cd8512c5c0c44da460b3633e26211725ebd17baead955ce5",
+      "pages": 46,
+      "opaque_pages": [],
+      "findings": [
+        {
+          "type": "INDEX_START_PAGE_MISMATCH",
+          "severity": "error",
+          "location": "DOC-04",
+          "evidence": "Index states start page 23; first text-layer occurrence is PDF page 21.",
+          "human_action": "Check index references against the assembled document order."
+        }
+      ],
+      "processing_seconds": 5.907391,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "T07",
+      "wall_seconds": 6.238449,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T07_index_reference_mismatch.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T07.json"
+      ]
+    },
+    {
+      "pdf": "T08_wrong_document_version.pdf",
+      "sha256": "5e1672760321c40e162946e88022a11f765968bc62dca17537b225606502dadd",
+      "pages": 46,
+      "opaque_pages": [],
+      "findings": [
+        {
+          "type": "VERSION_MISMATCH",
+          "severity": "error",
+          "location": "DOC-02",
+          "evidence": "Version register expects V3; text-layer page labels contain: V1.",
+          "human_action": "Confirm the operative source version with the responsible legal professional."
+        }
+      ],
+      "processing_seconds": 5.873621,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "T08",
+      "wall_seconds": 6.218927,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T08_wrong_document_version.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T08.json"
+      ]
+    },
+    {
+      "pdf": "T09_exhibit_label_mismatch.pdf",
+      "sha256": "0a59a968e6b0e246b8a92639a061d2b7bd56076d282e7704bddd7970815f7013",
+      "pages": 46,
+      "opaque_pages": [],
+      "findings": [
+        {
+          "type": "EXHIBIT_LABEL_MISMATCH",
+          "severity": "error",
+          "location": "DOC-03",
+          "evidence": "Inventory expects exhibit label A; text-layer page labels contain: Z.",
+          "human_action": "Compare the exhibit divider and source inventory; do not infer legal identity from the label alone."
+        }
+      ],
+      "processing_seconds": 5.763019,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "T09",
+      "wall_seconds": 6.087364,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T09_exhibit_label_mismatch.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T09.json"
+      ]
+    },
+    {
+      "pdf": "T10_low_quality_raster_page.pdf",
+      "sha256": "806f35445af0e22373a38b07817b75c779c8e7818668519ee962502731c32c76",
+      "pages": 46,
+      "opaque_pages": [
+        23
+      ],
+      "findings": [
+        {
+          "type": "NO_EXTRACTABLE_TEXT_LAYER",
+          "severity": "warning",
+          "location": "PDF page 23",
+          "evidence": "The page yielded fewer than 20 non-whitespace characters from the embedded text layer; visual readability was not assessed.",
+          "human_action": "Open the page visually and confirm legibility; OCR or another accessible source may be needed."
+        }
+      ],
+      "processing_seconds": 5.507132,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "T10",
+      "wall_seconds": 5.842567,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T10_low_quality_raster_page.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T10.json"
+      ]
+    },
+    {
+      "pdf": "T11_two_independent_defects.pdf",
+      "sha256": "4ea8731fab3b45c9836d94a67d08664b6916544d57fb39ff8bdd73a84a9126cc",
+      "pages": 38,
+      "opaque_pages": [],
+      "findings": [
+        {
+          "type": "BUNDLE_PAGINATION_MISMATCH",
+          "severity": "error",
+          "location": "PDF page 12",
+          "evidence": "Printed BUNDLE_PAGE is 13; PDF physical position is 12.",
+          "human_action": "Check continuous page numbering and its starting point."
+        },
+        {
+          "type": "MISSING_EXPECTED_DOCUMENT",
+          "severity": "error",
+          "location": "DOC-03",
+          "evidence": "Document is listed in the supplied expected inventory but no page carries this document identifier.",
+          "human_action": "Check the source file set and confirm whether the expected document belongs in this bundle."
+        }
+      ],
+      "processing_seconds": 3.878824,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "T11",
+      "wall_seconds": 4.215117,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T11_two_independent_defects.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T11.json"
+      ]
+    },
+    {
+      "pdf": "T12_clean_unusual_landscape.pdf",
+      "sha256": "6b094d38125261cf6efa00cb054fd07b655bcb2b22a8895f579162cb3d8654c7",
+      "pages": 46,
+      "opaque_pages": [],
+      "findings": [],
+      "processing_seconds": 5.824638,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "T12",
+      "wall_seconds": 6.190221,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T12_clean_unusual_landscape.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T12.json"
+      ]
+    },
+    {
+      "pdf": "C01_clean_text_variation.pdf",
+      "sha256": "bda88f027e23413747484418b1e40ccee1185582fc7c9654d21bfd3e7f2d27c9",
+      "pages": 46,
+      "opaque_pages": [],
+      "findings": [],
+      "processing_seconds": 5.87354,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "C01",
+      "wall_seconds": 6.250807,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/C01_clean_text_variation.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/C01.json"
+      ]
+    },
+    {
+      "pdf": "C02_clean_reordered_documents.pdf",
+      "sha256": "c4954ece35eb4e89dc1a53345716fe6e63f6e0f1bf3fab0e67b086d68ce9a02a",
+      "pages": 46,
+      "opaque_pages": [],
+      "findings": [],
+      "processing_seconds": 5.80322,
+      "checker_version": "0.1.0",
+      "suite": "primary",
+      "case_id": "C02",
+      "wall_seconds": 6.149169,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/C02_clean_reordered_documents.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/C02.json"
+      ]
+    },
+    {
+      "pdf": "U01_unseen_duplicate_other_document.pdf",
+      "sha256": "dc5521536fe3aa931fe6e5a5edd9f13cacf03d8a2e182f34c1aae8cb3251f2f2",
+      "pages": 47,
+      "opaque_pages": [],
+      "findings": [
+        {
+          "type": "EXACT_DUPLICATE_PAGE",
+          "severity": "warning",
+          "location": "PDF pages 37 and 38",
+          "evidence": "Normalized extracted page text is identical after removing the printed global page label.",
+          "human_action": "Compare both pages with the source and determine whether the repeat is intentional."
+        }
+      ],
+      "processing_seconds": 6.05969,
+      "checker_version": "0.1.0",
+      "suite": "unseen",
+      "case_id": "U01",
+      "wall_seconds": 6.385325,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/U01_unseen_duplicate_other_document.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/U01.json"
+      ]
+    },
+    {
+      "pdf": "U02_unseen_index_shift_other_document.pdf",
+      "sha256": "c18848a7bc58f0cfcfc9f70a8179f006e4bb246173eee3eade0809958146f9e5",
+      "pages": 46,
+      "opaque_pages": [],
+      "findings": [
+        {
+          "type": "INDEX_START_PAGE_MISMATCH",
+          "severity": "error",
+          "location": "DOC-08",
+          "evidence": "Index states start page 41; first text-layer occurrence is PDF page 40.",
+          "human_action": "Check index references against the assembled document order."
+        }
+      ],
+      "processing_seconds": 6.063123,
+      "checker_version": "0.1.0",
+      "suite": "unseen",
+      "case_id": "U02",
+      "wall_seconds": 6.434549,
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/U02_unseen_index_shift_other_document.pdf",
+        "--inventory",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+        "--versions",
+        "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+        "--json-out",
+        "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/U02.json"
+      ]
+    }
+  ]
+}

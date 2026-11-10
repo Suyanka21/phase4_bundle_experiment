@@ -1,0 +1,104 @@
+{
+  "run_count": 2,
+  "case_count": 16,
+  "all_pdf_hashes_same": true,
+  "all_findings_identical": true,
+  "cases": [
+    {
+      "case_id": "C01",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "C02",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "T01",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "T02",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "T03",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "T04",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "T05",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "T06",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "T07",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "T08",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "T09",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "T10",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "T11",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "T12",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "U01",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    },
+    {
+      "case_id": "U02",
+      "present_in_both": true,
+      "pdf_sha256_same": true,
+      "findings_identical": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "pdf": "T12_clean_unusual_landscape.pdf",
+  "sha256": "6b094d38125261cf6efa00cb054fd07b655bcb2b22a8895f579162cb3d8654c7",
+  "pages": 46,
+  "opaque_pages": [],
+  "findings": [],
+  "processing_seconds": 5.775205,
+  "checker_version": "0.1.0",
+  "suite": "primary",
+  "case_id": "T12",
+  "wall_seconds": 6.107019,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T12_clean_unusual_landscape.pdf",
+    "--inventory",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+    "--versions",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+    "--json-out",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T12.json"
+  ]
+}

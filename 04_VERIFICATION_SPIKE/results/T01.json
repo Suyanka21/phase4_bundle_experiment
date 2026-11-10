@@ -1,0 +1,23 @@
+{
+  "pdf": "T01_clean_baseline.pdf",
+  "sha256": "038acbee00d0c2b0e0a983466029439523cad74b50ca2c934d80ec27c5494fd2",
+  "pages": 46,
+  "opaque_pages": [],
+  "findings": [],
+  "processing_seconds": 5.83073,
+  "checker_version": "0.1.0",
+  "suite": "primary",
+  "case_id": "T01",
+  "wall_seconds": 6.183495,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T01_clean_baseline.pdf",
+    "--inventory",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+    "--versions",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+    "--json-out",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T01.json"
+  ]
+}

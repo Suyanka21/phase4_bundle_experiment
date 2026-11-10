@@ -1,0 +1,31 @@
+{
+  "pdf": "T02_missing_annexure.pdf",
+  "sha256": "e450e9381f43f81f09a77bad28dd20f007d958362ee7f4f595c30c2498907b35",
+  "pages": 38,
+  "opaque_pages": [],
+  "findings": [
+    {
+      "type": "MISSING_EXPECTED_DOCUMENT",
+      "severity": "error",
+      "location": "DOC-03",
+      "evidence": "Document is listed in the supplied expected inventory but no page carries this document identifier.",
+      "human_action": "Check the source file set and confirm whether the expected document belongs in this bundle."
+    }
+  ],
+  "processing_seconds": 3.973676,
+  "checker_version": "0.1.0",
+  "suite": "primary",
+  "case_id": "T02",
+  "wall_seconds": 4.294159,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/check_bundle.py",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/pdfs/T02_missing_annexure.pdf",
+    "--inventory",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/expected_inventory.json",
+    "--versions",
+    "/home/ubuntu/phase4_bundle_experiment/02_SYNTHETIC_TEST_DATASET/metadata/version_register.json",
+    "--json-out",
+    "/home/ubuntu/phase4_bundle_experiment/04_VERIFICATION_SPIKE/results/T02.json"
+  ]
+}

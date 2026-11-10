@@ -1,0 +1,19 @@
+{
+  "cases_evaluated": 16,
+  "defect_level_true_positives": 13,
+  "defect_level_false_positives": 0,
+  "defect_level_false_negatives": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "clean_cases": 4,
+  "clean_case_false_alarms": 0,
+  "mean_checker_processing_seconds_run2": 5.5591245,
+  "median_checker_processing_seconds_run2": 5.772945,
+  "min_checker_processing_seconds_run2": 3.973676,
+  "max_checker_processing_seconds_run2": 6.24,
+  "mean_end_to_end_wall_seconds_run2": 5.906567375,
+  "median_end_to_end_wall_seconds_run2": 6.106484,
+  "two_run_hashes_and_findings_identical": true,
+  "ground_truth_read_during_detection": false,
+  "scope_note": "Metrics only on 13 injected defect instances and four clean synthetic cases across 16 fictional PDFs. The two post-implementation variants are narrow challenge cases. These are not estimates for real Kenyan bundles."
+}

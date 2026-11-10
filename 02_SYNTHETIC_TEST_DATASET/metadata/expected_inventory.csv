@@ -1,0 +1,9 @@
+document_id,title,expected_pages,version,exhibit_label
+DOC-01,Simulated Statement of Claim,5,V2,
+DOC-02,Simulated Supporting Affidavit,5,V3,
+DOC-03,Simulated Annexure A — Schedule of Items,8,V1,A
+DOC-04,Simulated Annexure B — Correspondence,6,V2,B
+DOC-05,Simulated Service Correspondence,4,V1,
+DOC-06,Simulated Statement of Response,5,V2,
+DOC-07,Simulated Replying Affidavit,4,V1,
+DOC-08,Simulated Annexure C — Summary Table,7,V1,C
